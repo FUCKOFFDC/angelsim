@@ -39,15 +39,15 @@ module Wiltbank                                                                #
       (0.0..0.5) =>   {multip: Probability.lin_fun((0.0..0.5), 0, 0),          # 50% of investments lose all money
                        exit_y: Probability.rand_uniform(1, 5)},                # ...exits in years 1 to 5 randomly
       (0.5..0.69) =>  {multip: Probability.lin_fun((0.5..0.69), 0, 1),         # The next 19% returns linearly from 0 to invested sum
-                       exit_y: Probability.rand_uniform(1, 5)},                # ...exits in years 1 to 5 randomly
+                       exit_y: Probability.rand_uniform(1, 10)},               # ...exits in years 1 to 10 randomly
       (0.69..0.87) => {multip: Probability.lin_fun((0.69..0.87), 1, 5),        # The next 18% returns linearly between 1x and 5x
-                       exit_y: Probability.rand_uniform(1, 15)},               # ...exits in years 1 to 15 randomly
+                       exit_y: Probability.rand_uniform(1, 15)},               # ...exits in years 1 to 10 randomly
       (0.87..0.94) => {multip: Probability.lin_fun((0.87..0.94), 5, 10),       # Next 7% returns linearly between 5x and 10x
-                       exit_y: Probability.rand_uniform(3, 15)},               # ...exits in years 3 to 15 randomly
+                       exit_y: Probability.rand_uniform(3, 10)},               # ...exits in years 3 to 10 randomly
       (0.94..0.98) => {multip: Probability.lin_fun((0.94..0.98), 10, 30),      # Next 4% between 10x and 30x
-                       exit_y: Probability.rand_triang(7, 12, 8)},             # ...exits in years 7 to 12, with max prob at year 8
+                       exit_y: Probability.rand_triang(7, 15, 7)},             # ...exits in years 7 to 15, with max prob at year 7
       (0.98..1.0) =>  {multip: Probability.lin_fun((0.98..1.0),  30, 1000),    # Final 2% returns linearly between 30x and 1000x
-                       exit_y: Probability.rand_triang(10, 17, 12)}}           # ...exits in years 10 - 17, max probability in year 12
+                       exit_y: Probability.rand_triang(7, 15, 12)}}            # ...exits in years 7 - 15, max probability in year 12
 end
 
 module Portfolio
