@@ -1,0 +1,8 @@
+# Ignore all images created
+*.png
+
+# OS stuff
+.DS_Store
+.DS_Store?
+._*
+.Trashes
