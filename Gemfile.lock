@@ -1,0 +1,37 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RubyInline (3.12.4)
+      ZenTest (~> 4.3)
+    ZenTest (4.11.1)
+    activesupport (4.2.8)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    gruff (0.7.0)
+      rmagick (~> 2.13, >= 2.13.4)
+    histogram (0.2.4.1)
+    i18n (0.8.1)
+    minitest (5.10.1)
+    rmagick (2.16.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.3)
+      thread_safe (~> 0.1)
+    xirr (0.5.4)
+      RubyInline (~> 3)
+      activesupport (~> 4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gruff
+  histogram
+  xirr
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.14.6
