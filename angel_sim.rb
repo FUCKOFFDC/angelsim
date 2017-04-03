@@ -53,9 +53,9 @@ module Wiltbank
       (0.87..0.94) => {multip: Probability.lin_fun((0.87..0.94), 5, 10),
                        exit_y: Probability.rand_uniform(3, 15)},               # exits in years 3 to 15 randomly
       (0.94..0.98) => {multip: Probability.lin_fun((0.94..0.98), 10, 30),
-                       exit_y: Probability.rand_triang(7, 12, 8)},             # exits in years 7 to 12, max prob at 9
+                       exit_y: Probability.rand_triang(7, 12, 8)},             # exits in years 7 to 12, max prob at 8
       (0.98..1.0) =>  {multip: Probability.lin_fun((0.98..1.0),  30, 1000),
-                       exit_y: Probability.rand_triang(10, 17, 10)}}           # exits 10 - 17, max in year 17
+                       exit_y: Probability.rand_triang(10, 17, 12)}}           # exits 10 - 17, max in year 12
 end
 
 module Portfolio
